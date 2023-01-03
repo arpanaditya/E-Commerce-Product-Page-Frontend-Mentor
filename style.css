@@ -343,3 +343,7 @@ nav {
 .add_to_cart img {
   filter: brightness(0) invert(1);
 }
+
+#delete-icon {
+  cursor: pointer;
+}
