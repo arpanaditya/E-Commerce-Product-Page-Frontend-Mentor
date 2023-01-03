@@ -29,7 +29,8 @@
       </div>
       <div class="nav_right">
         <div class="cart_container">
-          <button class="cart_btn">
+          <button class="cart_btn" onclick="clickCart()">
+            <span class="indicator invisible">4</span>
             <img src="./images/icon-cart.svg" alt="cart">
           </button>
           <div class="cart_wrap invisible">
@@ -75,14 +76,14 @@
           <div class="cart_section">
             <div class="quantity">
               <div class="minus">
-                <img src="./images/icon-minus.svg" alt="minus">
+                <img src="./images/icon-minus.svg" alt="minus" onclick="dec()">
               </div>
-              <input type="text" name="value" id="value" value="0">
+              <p class="amount">0</p>
               <div class="minus">
-                <img src="./images/icon-plus.svg" alt="plus">
+                <img src="./images/icon-plus.svg" alt="plus" onclick="inc()">
               </div>
             </div>
-            <button class="add_to_cart">
+            <button class="add_to_cart" onclick="addToCart()">
               <img src="./images/icon-cart.svg" alt="add_to_cart">
               Add to cart
             </button>
@@ -96,6 +97,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://linktr.ee/arpanaditya">arpanaditya</a>.
   </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>
